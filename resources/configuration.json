@@ -1,0 +1,34 @@
+{
+  "musics": {
+    "count": 2,
+    "0": {
+      "name": "resources/1.mp3"
+    },
+    "1": {
+      "name": "resources/2.mp3"
+    }
+  },
+  "models": {
+    "count": 5,
+    "0": {
+      "name": "resources/cat.obj",
+      "texture": ""
+    },
+    "1": {
+      "name": "resources/car.obj",
+      "texture": ""
+    },
+    "2": {
+      "name": "resources/chibi.obj",
+      "texture": ""
+    },
+    "3": {
+      "name": "resources/house.obj",
+      "texture": "resources/house.png"
+    },
+    "4": {
+      "name": "resources/1K.obj",
+      "texture": "resources/1K.png"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="myApp.cpp" />
+    <ClCompile Include="engine\cw_app.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\gl_data.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\gl_mesh.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\gl_shader.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\gl_texture.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\glfw_window.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_glfw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_opengl2.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\LoadOBJ.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="myApp.hpp" />
+    <ClInclude Include="engine\cw_app.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\cw_camera.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\cw_header.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\cw_sound.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\cw_time.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gl_data.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gl_error.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gl_header.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gl_macros.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gl_mesh.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gl_shader.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\gl_texture.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\glfw_window.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\miniaudio.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\stb_image.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_glfw.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_opengl2.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\LoadOBJ.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\LoadJSON.hpp">
+      <Filter>engine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="engine">
+      <UniqueIdentifier>{f691e458-e1c2-408f-b1b5-3d605d29f2e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{192666d5-bcf6-4afe-b7c0-c7777cf6811a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
