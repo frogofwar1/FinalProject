@@ -63,7 +63,7 @@ public:
     
     virtual void onDraw() {}
 
-    virtual void onMouseMoveEvent(int x, int y){}
+    virtual void onMouseMoveEvent(double x, double y){}
 
     virtual void onMouseEvent(int button, int action){}
 

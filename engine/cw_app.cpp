@@ -99,7 +99,7 @@ namespace cw {
 
             m_window.setViewport();
 
-            glClearColor(.2,.2,.2,1);
+            glClearColor(.2f,.2f,.2f,1.0f);
             glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
             // Rendering Main App

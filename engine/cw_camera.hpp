@@ -25,9 +25,9 @@ namespace cw
         float m_far;
         float m_fov;
         
-        float m_yaw;
-        float m_pitch;
-        float m_roll;
+		double m_yaw;
+		double m_pitch;
+		double m_roll;
 
 		glm::quat rotation;
 
@@ -39,9 +39,9 @@ namespace cw
             m_far = -10.0f;
             m_fov = 3.14f/3.f;
             
-            m_yaw = 0.0f;
-            m_pitch = 0.0f;
-            m_roll = 0.0f;
+            m_yaw = 0.0;
+            m_pitch = 0.0;
+            m_roll = 0.0;
         }
         
         

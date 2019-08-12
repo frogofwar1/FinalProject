@@ -69,8 +69,8 @@ namespace cw
         
         // keep input status
         bool isMouseDown;
-        int previousX;
-        int previousY;
+		double previousX;
+		double previousY;
         
         Sound* music;
         
@@ -85,7 +85,7 @@ namespace cw
         virtual void init();
         virtual void onUpdate( float dtSecond ) override;
         virtual void onDraw() override;
-        virtual void onMouseMoveEvent(int x, int y) override;
+        virtual void onMouseMoveEvent(double x, double y) override;
         virtual void onMouseEvent(int button, int action) override;
         virtual void onKeyEvent(int key, int action) override;
         

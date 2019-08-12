@@ -277,7 +277,7 @@ namespace cw
 		static const char * current_music = json.musics[0].c_str();
 		if (ImGui::BeginCombo("Select music", current_music)) // The second parameter is the label previewed before opening the combo.
 		{
-			for (int n = 0; n < json.musics.size(); n++)
+			for (unsigned int n = 0; n < json.musics.size(); n++)
 			{
 				bool is_selected = (current_music == json.musics[n].c_str()); // You can store your selection however you want, outside or inside your objects
 				if (ImGui::Selectable(json.musics[n].c_str(), is_selected))
@@ -325,7 +325,7 @@ namespace cw
 		static const char * current_OBJ = json.models[OBJNo].model.c_str();
 		if (ImGui::BeginCombo("Select OBJ", current_OBJ)) // The second parameter is the label previewed before opening the combo.
 		{
-			for (int n = 0; n < json.models.size(); n++)
+			for (unsigned int n = 0; n < json.models.size(); n++)
 			{
 				bool is_selected = (current_OBJ == json.models[n].model.c_str()); // You can store your selection however you want, outside or inside your objects
 				if (ImGui::Selectable(json.models[n].model.c_str(), is_selected))
@@ -370,7 +370,7 @@ namespace cw
 		static bool isSelectObject = false;
 		if (ImGui::BeginCombo("Select Object", current_Object)) // The second parameter is the label previewed before opening the combo.
 		{
-			for (int n = 0; n < meshes.size(); n++)
+			for (unsigned int n = 0; n < meshes.size(); n++)
 			{
 				bool is_selected = (current_Object == to_string(n).c_str()); // You can store your selection however you want, outside or inside your objects
 				if (ImGui::Selectable(to_string(n).c_str(), is_selected))
@@ -466,7 +466,7 @@ namespace cw
 			mesh3->unbind();
 		texture3->unbind();
 
-		for (int i = 0; i < meshes.size(); i++) {
+		for (unsigned int i = 0; i < meshes.size(); i++) {
 			normalMatrixes.push_back(glm::transpose(glm::inverse(glm::mat3(view * meshes[i]->model()))));
 			glUniformMatrix3fv(normalMatID, 1, GL_FALSE, glm::value_ptr(normalMatrixes[i]));
 			//meshes[i]->mRot = glm::rotate(glm::quat(), angle, glm::vec3(0, 1, 0));
@@ -512,7 +512,7 @@ namespace cw
         }
     }
     
-    void MyApp::onMouseMoveEvent(int x, int y)
+    void MyApp::onMouseMoveEvent(double x, double y)
     {
         
         /*-----------------------------------------------------------------------------
@@ -522,10 +522,10 @@ namespace cw
         
         if( isMouseDown )
         {
-            const float DRAG = 0.01f;
+            const double DRAG = 0.01;
             
-            int xoffset = x - previousX;
-            int yoffset = y - previousY;
+			double xoffset = x - previousX;
+			double yoffset = y - previousY;
             m_camera->m_yaw += xoffset*DRAG;
             m_camera->m_pitch += yoffset*DRAG;
         }
@@ -544,9 +544,9 @@ namespace cw
         delete(mesh2);
         delete(shader);
         delete(m_camera);
-		for (int i = 0; i < meshes.size(); i++)
+		for (unsigned int i = 0; i < meshes.size(); i++)
 			delete(meshes[i]);
-		for (int i = 0; i < textures.size(); i++)
+		for (unsigned int i = 0; i < textures.size(); i++)
 			delete(textures[i]);
     }
     

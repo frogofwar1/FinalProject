@@ -1,11 +1,14 @@
 {
   "musics": {
-    "count": 2,
+    "count": 3,
     "0": {
       "name": "resources/1.mp3"
     },
     "1": {
       "name": "resources/2.mp3"
+    },
+    "2": {
+      "name": "resources/3.mp3"
     }
   },
   "models": {

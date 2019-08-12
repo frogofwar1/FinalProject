@@ -90,7 +90,7 @@ namespace cw
 			coord.push_back(new std::string(buf));
 		}
 		//go through all of the elements of coord, and decide what kind of element is that
-		for (int i = 0; i < coord.size(); i++)
+		for (unsigned int i = 0; i < coord.size(); i++)
 		{
 			if (coord[i]->c_str()[0] == '#')   //if it is a comment (the first character is #)
 				continue;       //we don't care about that
@@ -112,7 +112,7 @@ namespace cw
 			{
 				if (!hasTexture)
 					hasTexture = true;
-				float tmpx, tmpy, tmpz;
+				float tmpx, tmpy;
 				sscanf_s(coord[i]->c_str(), "vt %f %f", &tmpx, &tmpy);
 				textures.push_back(new coordinate(tmpx, tmpy, 0.0f));
 			}
@@ -213,7 +213,7 @@ namespace cw
 			}
 		}
 
-		for (int i = 0; i < faces.size(); i++)
+		for (unsigned int i = 0; i < faces.size(); i++)
 		{
 			vec4 tmpc = vec4(0.5f, 0.5f, 0.5f, 1.0f);
 			if (!isTriangle)
